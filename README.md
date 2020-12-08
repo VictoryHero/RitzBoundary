@@ -1,6 +1,6 @@
 ## Problem Description 
 
-![题目](F:\饶\题目.jpg)
+![题目](题目.jpg)
 
 包含两个三类边值条件的边值问题
 
