@@ -21,28 +21,6 @@ f=inline('sin(pi*x)-cos(pi*x)','x');
 exact_u=(sin(pi*X)-cos(pi*X))/pi^2+(4*pi-1)*X/(3*pi)-(pi^2-pi+1)/pi^2;
 
 
-%% ¶þº¯
-% p=1;q=pi^2/4;
-% high=1;low=0;
-% N=50;
-% X=linspace(low,high,N+1);
-% f=inline('pi^2/2*sin(pi/2*x)');
-% exact_u=sin((pi*X)/2)/2 - cos((pi*X)/2)/2 +...
-% exp((pi*X)/2).*((exp(-(pi.*X)/2).*cos((pi*X)/2))/2 ...
-% + (exp(-(pi*X)/2).*sin((pi*X)/2))/2);
-% leftb=0;
-% rightb=0;
-
-%% Ò»º¯
-% p=-1;q=1;
-% high=1;low=0;
-% N=50;
-% X=linspace(low,high,N+1);
-% f=inline('-1*x');
-% exact_u=sin(X)/sin(1)-X;
-% leftb=0;
-% rightb=0;
-
 h=(high-low)/N;
 K=Stiff_matrix(p,q,h,N,low,high,rightb);
 b=rightVector(f,X,h,N,low,high);

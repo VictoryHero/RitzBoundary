@@ -20,4 +20,4 @@ M: 区间大小
 
 若将该问题转为经典的一类边值条件的双边值问题，则按照传统的Rizt解法 可得到如下:
 
-![结果](result2.png)
+![结果](FirstCondition/result2.png)
